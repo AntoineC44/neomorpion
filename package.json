@@ -1,0 +1,21 @@
+{
+  "name": "Neomorpion",
+  "version": "1.0.0",
+  "description": "A tic tac toe game",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^2.7.4",
+    "ent": "^2.2.0",
+    "socket.io": "^0.9.13",
+    "urlrouter": "^0.3.0",
+    "util": "^0.10.3",
+    "sys": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
