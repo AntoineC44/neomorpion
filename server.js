@@ -11,9 +11,6 @@ var connect = require('connect'),
     port = process.env.PORT || 5000;
 
 app.use(urlrouter(function(app) {
-    app.get('*',function(req,res){  
-    res.redirect('https://neomorpion.herokuapp.com/'+req.url)
-    });
     app.get('/', function(req, res, next) {
         req.url = '/index.html';
         connect.utils.parseUrl(req);
