@@ -1,6 +1,6 @@
 var connect = require('connect'),
     app = connect(),
-    http = require('https'),
+    http = require('http'),
     server = http.createServer(app),
     urlrouter = require('urlrouter'),
     io = require('socket.io').listen(server),
