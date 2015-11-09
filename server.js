@@ -8,7 +8,7 @@ var connect = require('connect'),
     sys = require('sys'),
     util = require('util'),
     ent = require('ent'),
-    port = 8866;
+    port = 50000;
 
 app.use(urlrouter(function(app) {
     app.get('/', function(req, res, next) {
