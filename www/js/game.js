@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8866');
+var socket = io.connect('https://localhost:5000');
 
 //Au chargement de la page
 $(function() {
