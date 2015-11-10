@@ -1,5 +1,4 @@
-var port = process.env.PORT || 5000;
-var socket = io.connect('https://localhost:'+port);
+var socket = io.connect(window.location.hostname);
 
 //Au chargement de la page
 $(function() {
