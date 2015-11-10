@@ -1,16 +1,10 @@
-// This line is from the Node.js HTTPS documentation.
-var fs = require('fs');
-var options = {
-  key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-  cert: fs.readFileSync('test/fixtures/keys/agent2-cert.cert')
-};
-
 var connect = require('connect'),
     app = connect(),
-    https = require('https'),
-    server = https.createServer(options, app),
+    http = require('http'),
+    server = http.createServer(app),
     urlrouter = require('urlrouter'),
     io = require('socket.io').listen(server),
+    fs = require('fs'),
     sys = require('sys'),
     util = require('util'),
     ent = require('ent'),
@@ -23,8 +17,6 @@ app.use(urlrouter(function(app) {
         next();
     });
 }));
-
-
 
 app.use(connect.static(__dirname + '/www'));
 
